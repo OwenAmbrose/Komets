@@ -1,14 +1,17 @@
 body, html {
     height: 100%;
 }
-
+body {
+  background-color: grey;
+  color: white;
+}
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  background-image: url("https://i.imgur.com/RmANIou.png");
 
   /* Set a specific height */
-  height: 50%;
+  height: 35%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -90,5 +93,11 @@ body, html {
 .ion-social-instagram {
 
 }
-
+nav {
+  background-color: black;
+}
+.carousel {
+  width: 50%;
+  margin-left: 25%;
+}
 /* Credit to https://epicbootstrap.com/snippets/footer-basic */
