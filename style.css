@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
 }
-body {
+.bg {
   background-color: grey;
   color: white;
 }
@@ -100,4 +100,73 @@ nav {
   width: 50%;
   margin-left: 25%;
 }
+iframe {
+  height: 100%;
+  width: 100%;
+}
 /* Credit to https://epicbootstrap.com/snippets/footer-basic */
+main {
+  background-color: black;
+margin-top: 6%;
+margin-left: 15%;
+margin-right: 15%;
+margin-bottom: 5%
+}
+#fronionLogo {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#signUp {
+	margin-top: 10px;
+	padding: 0 20px 15px 20px;
+	border: 1px solid red;
+}
+#signUp legend {
+	font-size: 2em;
+	font-weight: 200;
+	padding: 0 .2em;
+}
+#signUp label {
+	display: block;
+	padding-top: 1em;
+}
+#signUp label:first-of-type {
+	margin-top: -.9em;
+}
+#nameLabel {
+	margin-top: -1em;
+}
+#submit, #clearCookie {
+	display: block;
+	font-size: 1em;
+	color: #FFF;
+	text-transform: uppercase;
+	background: red;
+	padding: .8em 1em .7em;
+	border: 0;
+	border-bottom: 3px solid darkred;
+	margin-top: 15px;
+}
+.textfield {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	padding: 7px;
+	background: #efefef;
+	border: 1px solid #bbb;
+	width: 97%;
+}
+.textfield:focus {
+	background: #FBF8D2;
+}
+#donate {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 12px 50px;
+  margin-right: 5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

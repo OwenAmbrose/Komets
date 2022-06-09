@@ -8,10 +8,47 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+<script>
+	//Clears default text insied the name box and leaves user imput
+		function clearName () {
+			if (document.getElementById('nameField').value == 'First and Last Name'){
+				document.getElementById('nameField').value= ''
+			}
+		}
+		//Clears default text insied the number box and leaves user imput
+		function clearPhone () {
+			if (document.getElementById('phoneField').value == 'example: 212-123-1234/example@gmail.com'){
+				document.getElementById('phoneField').value= ''
+			}
+		}
+		//Bring default text back for name field
+		function resetName () {
+			if (document.getElementById('nameField').value == ''){
+				document.getElementById('nameField').value= 'First and Last Name'
+			}
+		}
+		//Bring default text back for number field
+		function resetPhone () {
+			if (document.getElementById('phoneField').value == ''){
+				document.getElementById('phoneField').value= 'example: 212-123-1234/example@gmail.com'
+			}
+		}
+		//Clears default text insied the email box and leaves user imput
+		function clearEmail () {
+			if (document.getElementById('emailField').value == 'Write message here'){
+				document.getElementById('emailField').value= ''
+			}
+		}
+		//Bring default text back for email field
+		function resetEmail () {
+			if (document.getElementById('emailField').value == ''){
+				document.getElementById('emailField').value= 'Write message here'
+			}
+		}
+	</script>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <body class="bg">
+    <nav class="navbar navbar-expand-md navbar-dark">
   <!-- Brand -->
   <a class="navbar-brand" href="#"><img src="https://i.imgur.com/TeGlQEr.png" height="35px"></a>
 
@@ -33,15 +70,34 @@
         <a class="nav-link" href="schedule.html">Schedule</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="donate.html">Donations</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="sponsors.html">Sponsors</a>
       </li>
     </ul>
   </div>
+  <button id="donate" type="button" name="button">Donate</button>
 </nav>
 
+<main role="main">
+	<div class="contentWrapper">
+		<form action="" method="post" name="signUpForm" id="signUpForm">
+			<fieldset id="signUp">
+				<legend>Contact Us!</legend>
+
+					<label for="nameField">Name:</label>
+					<input id="nameField" name="nameField" type="text" class="textfield" value="First and Last Name" onFocus="clearName();" onBlur="resetName();">
+
+					<label for="phoneField">Phone/Email:</label>
+					<input id="phoneField" name="phoneField" type="text" class="textfield" value="example: 212-123-1234/example@gmail.com" onFocus="clearPhone();" onBlur="resetPhone();">
+
+					<label for="emailField">Message:</label>
+					<input id="emailField" name="emailField" type="text" class="textfield" value="Write message here" onFocus="clearEmail();" onBlur="resetEmail();">
+
+					<input id="submit" type="submit" name="submit" value="Request!">
+
+			</fieldset>
+		</form>
+	</div>
+</main>
 
 <div class="footer-basic">
     <footer>
