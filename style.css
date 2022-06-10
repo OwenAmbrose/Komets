@@ -170,3 +170,9 @@ margin-bottom: 5%
   display: inline-block;
   font-size: 16px;
 }
+.sponsors {
+  padding-left: 4.5%;
+}
+#sponsors {
+  padding-left: 2%;
+}
